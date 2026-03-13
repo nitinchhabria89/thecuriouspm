@@ -5,50 +5,67 @@ const DATA = {
         {
             company: "mCanvas – Affinity Global Advertising",
             role: "VP, Product",
-            period: "March 2020 – Present",
+            period: "January 2024 – Present",
             location: "Mumbai, India",
+            description: "mCanvas is a global immersive advertising platform delivering rich media and CTV ad experiences across 10+ markets.",
             highlights: [
-                "Led product development & strategy initiatives, resulting in 30% growth in Revenue.",
-                "Leading a team of 4 product managers & 4 QA engineers, overseeing successful product releases.",
-                "Spearheaded strategic partnerships like MOAT, IAS & Nielsen DAR across ad formats for Ad-tracking & verification.",
-                "Strategized launch of new ad formats based on market research & A/B testing, leading to 50% CTR increase.",
-                "Pioneered utilization of RTB, Programmatic Guaranteed, and Private Marketplace Deals.",
-                "Achieved 30% increase in ROAS by harnessing full potential of DSP, SSP, & DMP."
+                "Scaled the overall CTV business from zero to $3M in revenue within the first year — defining the product vision, pricing strategy, and go-to-market motion from the ground up.",
+                "Conceptualised, launched, and scaled Interactive CTV as a flagship ad format — bringing interactivity and measurable engagement to the traditionally passive TV screen.",
+                "Pioneered an omnichannel CTV experience — users exposed to an ad on CTV are retargeted across their household devices including mobile and desktop, creating a seamless cross-screen brand journey.",
+                "Currently spearheading the product vision, strategy, and build for a Global Performance CTV product — driving measurable performance outcomes via CTV and tracking conversions across all devices within the same household. Comparable in ambition to platforms like MNTN and TVScientific.",
+                "Played a key role in growing the rich media business 10x over 6 years at mCanvas — contributing across product strategy, format innovation, and platform scalability.",
+                "Drove 30% YoY revenue growth across the immersive ad formats portfolio by defining and executing a data-informed product roadmap aligned to advertiser and publisher outcomes.",
+                "Improved ad performance by 30% through programmatic stack optimisation across RTB, PMP, and Programmatic Guaranteed models.",
+                "Delivered 50% higher CTR across key ad formats through continuous A/B testing, UX iteration, and ML-informed product decisions.",
+                "Led third-party ad verification integrations with MOAT, IAS, and Nielsen DAR — strengthening omni-channel measurement and brand safety for advertisers.",
+                "Leading a 34-person overall team with direct management of Product Managers and QA Engineers, with full oversight of 20 engineers and 10 HTML developers — owning the complete product and engineering pipeline end-to-end."
             ]
         },
         {
-            company: "Remote Software Solutions Pvt Ltd",
-            role: "Business & Project Head",
-            period: "July 2017 – March 2020",
+            company: "mCanvas – Affinity Global Advertising",
+            role: "Product Manager → Sr. Director, Product",
+            period: "March 2020 – January 2024",
             location: "Mumbai, India",
             highlights: [
-                "Led successful Acquisition of TechMerch Innovations (TMi) into Remote Software Solutions (UK).",
-                "Directed growth of the Digital division, overseeing a portfolio of 300+ projects.",
-                "Generated annual recurring revenue of 5 million INR in 2.5 years.",
-                "Managed a distributed team across Mumbai, Goa, and the UK."
+                "Joined mCanvas as a sole Individual Contributor PM — inherited zero product infrastructure, with operations managed entirely on Excel. Built the foundational product layer from scratch including publisher dashboards, advertiser dashboards, internal reporting systems, and real-time revenue and tech-net visibility tools.",
+                "Partnered with publishers and advertisers to conceptualise and ship innovative rich media ad formats — including live COVID data integrations, real-time weather and pollen creatives, and Snapchat-style live makeup filters on ad creatives.",
+                "Built deep expertise across the full programmatic ecosystem — working hands-on with DSPs, SSPs, DMPs, oRTB, Header Bidding, JS Tags, and VAST Tags to architect integrations and optimise ad delivery at scale.",
+                "Developed hands-on proficiency across industry-leading AdTech platforms — DSPs: Xandr, DV360, The Trade Desk, Google DCM · SSPs & Verification: Google Ad Manager, IAS, MOAT, Lumen · DMPs: Oracle, Lotame, Zeotap, LiveRamp, Datasys.",
+                "Grew from Individual Contributor to Sr. Director in under 4 years — progressively taking on team leadership, cross-functional ownership, and strategic product decisions as the platform scaled."
+            ]
+        },
+        {
+            company: "Freelance",
+            role: "Guest Trainer & Speaker",
+            period: "June 2018 – August 2025",
+            location: "Mumbai, India",
+            highlights: [
+                "Trained 350+ college students and early-career professionals over 7 years across WordPress, SEO, Digital Marketing, Email Marketing, Media Buying, Programmatic Advertising, SEM, and App Store Optimisation.",
+                "Conducted corporate workshops for non-tech organisations on digital transformation and marketing fundamentals.",
+                "Driven by a belief that knowledge compounds when shared — consistently giving back to the next generation of digital professionals."
             ]
         },
         {
             company: "TechMerch Innovations (TMi)",
-            role: "Entrepreneur & Project Head (Founder)",
-            period: "April 2013 – July 2017",
+            role: "Founder & CEO",
+            period: "January 2013 – March 2020",
             location: "Mumbai, India",
             highlights: [
-                "Founded a bootstrapped startup providing cost-effective digital solutions (SEO, SEM, Web Design).",
-                "Managed & Delivered 400+ projects generating an ARR of 3 million INR in 4.5 years.",
-                "Grew team from 3 to 15 members until acquisition.",
-                "End-to-end project planning, team alignment, and delivery of high-stakes web/app projects."
+                "Built TechMerch Innovations (TMi) from scratch — bootstrapped, no funding, starting as a 3-person team growing to 15 — delivering 400+ digital products for SMBs across India including 300+ corporate and brochure websites, 50+ ecommerce platforms, and 20+ mobile apps.",
+                "Generated ARR of ₹3M INR within 4.5 years as an independent studio — managing the full business lifecycle including sales, delivery, team building, and client relationships.",
+                "Led a strategic merger with Remote Software Solutions in 2017 — transitioning from Founder to Business and Project Head, scaling the combined digital services business to ₹5M ARR and delivering 300+ additional projects.",
+                "Managed distributed product and engineering teams post-merger — aligning roadmap strategy with business outcomes across sales, marketing, and delivery functions.",
+                "This chapter shaped a builder's mindset that continues to define how I approach product leadership today — ship fast, validate early, and always think in business outcomes."
             ]
         },
         {
-            company: "Marketplace Technologies Pvt Ltd",
-            role: "Web Developer",
-            period: "Dec 2011 – April 2013",
+            company: "Bombay Stock Exchange (BSE) / Marketplace Technologies",
+            role: "Software Consultant",
+            period: "December 2011 – April 2013",
             location: "Mumbai, India",
             highlights: [
-                "Contributed to software development for the Bank of India Shareholding Ltd (BOISL) Member Portal.",
-                "Focused on feature implementation, bug resolution, and UI enhancements.",
-                "Resulted in a 30% increase in user retention and engagement."
+                "Built the engineering foundation that would later define my approach to product — working on the Bank of India Shareholding Ltd (BOISL) Member Portal for Brokers, delivering new features, bug resolution, and UI/UX enhancements.",
+                "Developed early expertise in web technologies, portal architecture, and financial systems — laying the technical groundwork for everything that followed as a founder and product leader."
             ]
         }
     ],
@@ -131,6 +148,7 @@ function renderExperience() {
                 <div class="timeline-dot"></div>
                 <h4 class="timeline-role">${exp.role}</h4>
                 <p class="timeline-company">${exp.company}</p>
+                ${exp.description ? `<p class="p-muted">${exp.description}</p>` : ''}
                 <div class="highlights-list">
                     ${exp.highlights.map(h => `
                         <div class="highlight-item">
@@ -209,10 +227,11 @@ function setupEffects() {
         if (scrolled > 50) navbar.classList.add('scrolled');
         else navbar.classList.remove('scrolled');
         
-        // Parallax Effects
+        // Parallax Effects (disabled on mobile to prevent image overlap)
+        const isMobile = window.innerWidth <= 1024;
         if (heroBg) heroBg.style.transform = `translateY(${scrolled * 0.15}px)`;
         if (floatingText) floatingText.style.transform = `translateX(${scrolled * 0.2}px)`;
-        if (heroImage) heroImage.style.transform = `translateY(${scrolled * -0.05}px)`;
+        if (heroImage) heroImage.style.transform = isMobile ? '' : `translateY(${scrolled * -0.05}px)`;
     });
 }
 

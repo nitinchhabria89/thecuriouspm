@@ -922,6 +922,11 @@ ul {
         gap: 3rem;
     }
 
+    .about-sticky,
+    .timeline-meta {
+        position: static;
+    }
+
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
