@@ -10,7 +10,7 @@ const DATA = {
             description: "mCanvas is a global immersive advertising platform delivering rich media and CTV ad experiences across 10+ markets.",
             summary: "Scaled the CTV business from the ground up, grew the rich media business 10x over 6 years, and lead a 34-person product and engineering org. Currently building India's most ambitious Interactive and Performance CTV products.",
             highlights: [
-                "Scaled the overall CTV business from zero to $3M in revenue within the first year — defining the product vision, pricing strategy, and go-to-market motion from the ground up.",
+                "Scaled the overall CTV business from zero — defining the product vision, pricing strategy, and go-to-market motion from the ground up.",
                 "Conceptualised, launched, and scaled Interactive CTV as a flagship ad format — bringing interactivity and measurable engagement to the traditionally passive TV screen.",
                 "Pioneered an omnichannel CTV experience — users exposed to an ad on CTV are retargeted across their household devices including mobile and desktop, creating a seamless cross-screen brand journey.",
                 "Currently spearheading the product vision, strategy, and build for a Global Performance CTV product — driving measurable performance outcomes via CTV and tracking conversions across all devices within the same household. Comparable in ambition to platforms like MNTN and TVScientific.",
