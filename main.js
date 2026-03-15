@@ -8,6 +8,7 @@ const DATA = {
             period: "January 2024 – Present",
             location: "Mumbai, India",
             description: "mCanvas is a global immersive advertising platform delivering rich media and CTV ad experiences across 10+ markets.",
+            summary: "Scaled CTV from zero to $3M revenue in year one, grew the rich media business 10x over 6 years, and lead a 34-person product and engineering org. Currently building India's most ambitious Interactive and Performance CTV products.",
             highlights: [
                 "Scaled the overall CTV business from zero to $3M in revenue within the first year — defining the product vision, pricing strategy, and go-to-market motion from the ground up.",
                 "Conceptualised, launched, and scaled Interactive CTV as a flagship ad format — bringing interactivity and measurable engagement to the traditionally passive TV screen.",
@@ -26,6 +27,7 @@ const DATA = {
             role: "Product Manager → Sr. Director, Product",
             period: "March 2020 – January 2024",
             location: "Mumbai, India",
+            summary: "Joined as sole IC PM with zero product infrastructure — built the foundational product layer from scratch. Grew to Sr. Director in under 4 years while developing deep hands-on expertise across the full programmatic ecosystem.",
             highlights: [
                 "Joined mCanvas as a sole Individual Contributor PM — inherited zero product infrastructure, with operations managed entirely on Excel. Built the foundational product layer from scratch including publisher dashboards, advertiser dashboards, internal reporting systems, and real-time revenue and tech-net visibility tools.",
                 "Partnered with publishers and advertisers to conceptualise and ship innovative rich media ad formats — including live COVID data integrations, real-time weather and pollen creatives, and Snapchat-style live makeup filters on ad creatives.",
@@ -39,6 +41,7 @@ const DATA = {
             role: "Guest Trainer & Speaker",
             period: "June 2018 – August 2025",
             location: "Mumbai, India",
+            summary: "Trained 350+ students and early-career professionals over 7 years across SEO, digital marketing, programmatic advertising, and more. Knowledge compounds when shared.",
             highlights: [
                 "Trained 350+ college students and early-career professionals over 7 years across WordPress, SEO, Digital Marketing, Email Marketing, Media Buying, Programmatic Advertising, SEM, and App Store Optimisation.",
                 "Conducted corporate workshops for non-tech organisations on digital transformation and marketing fundamentals.",
@@ -50,6 +53,7 @@ const DATA = {
             role: "Founder & CEO",
             period: "January 2013 – March 2020",
             location: "Mumbai, India",
+            summary: "Bootstrapped TMi from a 3-person team to 15 — shipped 400+ digital products and hit ₹3M ARR before leading a strategic merger that scaled the combined business to ₹5M ARR. This founder chapter defines how I think about product today.",
             highlights: [
                 "Built TechMerch Innovations (TMi) from scratch — bootstrapped, no funding, starting as a 3-person team growing to 15 — delivering 400+ digital products for SMBs across India including 300+ corporate and brochure websites, 50+ ecommerce platforms, and 20+ mobile apps.",
                 "Generated ARR of ₹3M INR within 4.5 years as an independent studio — managing the full business lifecycle including sales, delivery, team building, and client relationships.",
@@ -63,6 +67,7 @@ const DATA = {
             role: "Software Consultant",
             period: "December 2011 – April 2013",
             location: "Mumbai, India",
+            summary: "Built the engineering foundation that defined everything that followed — working on the BOISL Member Portal for Brokers at Bombay Stock Exchange, delivering features, bug fixes, and UI/UX improvements.",
             highlights: [
                 "Built the engineering foundation that would later define my approach to product — working on the Bank of India Shareholding Ltd (BOISL) Member Portal for Brokers, delivering new features, bug resolution, and UI/UX enhancements.",
                 "Developed early expertise in web technologies, portal architecture, and financial systems — laying the technical groundwork for everything that followed as a founder and product leader."
@@ -138,7 +143,7 @@ function init() {
 
 function renderExperience() {
     const container = document.getElementById('experience-list');
-    container.innerHTML = DATA.EXPERIENCES.map(exp => `
+    container.innerHTML = DATA.EXPERIENCES.map((exp, i) => `
         <div class="timeline-item">
             <div class="timeline-meta">
                 <span class="period-badge">${exp.period}</span>
@@ -148,18 +153,38 @@ function renderExperience() {
                 <div class="timeline-dot"></div>
                 <h4 class="timeline-role">${exp.role}</h4>
                 <p class="timeline-company">${exp.company}</p>
-                ${exp.description ? `<p class="p-muted">${exp.description}</p>` : ''}
-                <div class="highlights-list">
-                    ${exp.highlights.map(h => `
-                        <div class="highlight-item">
-                            <span class="highlight-plus">+</span>
-                            <p>${h}</p>
-                        </div>
-                    `).join('')}
+                ${exp.description ? `<p class="p-muted timeline-desc">${exp.description}</p>` : ''}
+                <p class="timeline-summary">${exp.summary}</p>
+                <div class="highlights-collapse" id="highlights-${i}">
+                    <div class="highlights-list">
+                        ${exp.highlights.map(h => `
+                            <div class="highlight-item">
+                                <span class="highlight-plus">+</span>
+                                <p>${h}</p>
+                            </div>
+                        `).join('')}
+                    </div>
                 </div>
+                <button class="expand-toggle" data-target="highlights-${i}" data-count="${exp.highlights.length}">
+                    Show ${exp.highlights.length} highlights <span class="toggle-arrow">↓</span>
+                </button>
             </div>
         </div>
     `).join('');
+    setupExpandToggles();
+}
+
+function setupExpandToggles() {
+    document.querySelectorAll('.expand-toggle').forEach(btn => {
+        btn.addEventListener('click', function () {
+            const target = document.getElementById(this.dataset.target);
+            const count = this.dataset.count;
+            const isOpen = target.classList.toggle('open');
+            const arrow = isOpen ? '↑' : '↓';
+            const label = isOpen ? 'Show less' : `Show ${count} highlights`;
+            this.innerHTML = `${label} <span class="toggle-arrow">${arrow}</span>`;
+        });
+    });
 }
 
 function renderServices() {
