@@ -12,16 +12,17 @@
 
 ## Server Setup (DigitalOcean Droplet)
 
-> ⚠️ IMPORTANT: nginx IS installed but NOT active. Always use Apache2 commands.
-- **Web server:** Apache2 (NOT nginx — nginx config is valid but service is inactive)
-- **Site root:** `/var/www/html/`
-- **Reload Apache:** `sudo systemctl reload apache2`
+> ⚠️ IMPORTANT: nginx runs INSIDE Docker — do NOT use systemctl or nginx -s reload directly. Always use docker exec.
+- **Web server:** nginx running inside Docker container named `n8n-nginx`
+- **Docker setup:** 3 containers — `n8n-nginx` (port 80/443), `n8n` (port 5678), `n8n-postgres`
+- **Site root:** `/var/www/html/` (volume-mounted into the container)
 - **Git pull:** `cd /var/www/html && git pull origin main`
+- **Reload nginx:** `docker exec n8n-nginx nginx -s reload`
 - **Full deploy sequence:**
   ```bash
   cd /var/www/html
   git pull origin main
-  sudo systemctl reload apache2
+  docker exec n8n-nginx nginx -s reload
   ```
 
 ---
