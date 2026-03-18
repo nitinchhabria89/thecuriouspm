@@ -12,7 +12,8 @@
 
 ## Server Setup (DigitalOcean Droplet)
 
-- **Web server:** Apache2 (NOT nginx — nginx is not active on this droplet)
+> ⚠️ IMPORTANT: nginx IS installed but NOT active. Always use Apache2 commands.
+- **Web server:** Apache2 (NOT nginx — nginx config is valid but service is inactive)
 - **Site root:** `/var/www/html/`
 - **Reload Apache:** `sudo systemctl reload apache2`
 - **Git pull:** `cd /var/www/html && git pull origin main`
