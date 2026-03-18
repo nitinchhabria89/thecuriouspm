@@ -116,7 +116,7 @@ const DATA = {
     ],
     ADVENTURE: {
         summary: "When I'm not orchestrating product roadmaps, I'm exploring the far corners of the globe - having visited 15+ countries. I'm a thrill-seeker at heart, from bungee jumping in South Africa to skydiving and scuba diving.",
-        highlights: ["Bungee Jumping", "Sky Diving", "Scuba Diving", "Paragliding", "Bike Riding", "Adventure Trekking"],
+        highlights: ["Bungee Jumping", "Sky Diving", "Scuba Diving", "Paragliding", "Bike Riding"],
         grid: [
             { src: "images/image5.jpg", alt: "Scuba Diving", label: "Deep Sea Exploration" },
             { src: "images/image3.jpg", alt: "Bungee Jumping", label: "Freefall Adrenaline" },
