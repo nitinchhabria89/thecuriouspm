@@ -11,7 +11,7 @@ Live site: **[thecuriouspm.com](https://thecuriouspm.com)**
 This is the personal portfolio website of **Nitin Chhabria** — Engineer, Founder, and Product Leader with 14 years in tech and 6 years building at the forefront of AdTech.
 
 Currently **VP of Product at [mCanvas](https://mcanvas.com)** (Affinity Global Advertising), where he has:
-- Scaled the CTV business from **zero to $3M in revenue**
+- Scaled the CTV business from the **ground up**.
 - Grown the rich media business **10x over 6 years**
 - Leads a **34-person product and engineering organisation**
 
